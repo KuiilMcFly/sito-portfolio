@@ -1,0 +1,39 @@
+.hero-banner {
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  color: white;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-banner .hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40%;
+}
+.hero-banner .hero-title h1, .hero-banner .hero-title h2, .hero-banner .hero-title p, .hero-banner .hero-title button {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hero-banner .hero-title h1 {
+  font-size: 60px;
+}
+.hero-banner .hero-title h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.hero-banner .hero-title p {
+  font-size: 22px;
+  width: 50%;
+  text-align: center;
+  color: rgb(227, 227, 227);
+  margin-bottom: 15px;
+}
+.hero-banner .hero-title button {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=heroBannerStyle.css.map */

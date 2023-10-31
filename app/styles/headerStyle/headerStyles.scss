@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    height: 100%;
+}
+
+.header-bar {
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 6%;
+    padding: 0 20px;
+
+    a,p, div {
+        height: fit-content;
+    }
+   
+    p {
+        margin: 0;
+        
+    }
+
+    .about-work {
+        display: flex;
+        gap: 10px;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .links {
+        display: flex;
+        gap: 15px;
+        a {
+            color: white;
+            text-decoration: none;
+            img {
+                height: 40px;
+                width: 40px;
+                filter: invert(100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+.header-bar {
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 6%;
+  padding: 0 20px;
+}
+.header-bar a, .header-bar p, .header-bar div {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.header-bar p {
+  margin: 0;
+}
+.header-bar .about-work {
+  display: flex;
+  gap: 10px;
+}
+.header-bar .about-work a {
+  color: white;
+  text-decoration: none;
+}
+.header-bar .links {
+  display: flex;
+  gap: 15px;
+}
+.header-bar .links a {
+  color: white;
+  text-decoration: none;
+}
+.header-bar .links a img {
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+}/*# sourceMappingURL=headerStyles.css.map */
