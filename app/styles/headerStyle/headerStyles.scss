@@ -13,6 +13,7 @@
     align-items: center;
     color: white;
     height: 6%;
+    width: 100%;
     padding: 0 20px;
 
     .logo {
@@ -55,6 +56,14 @@
                 width: 40px;
                 filter: invert(100%);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-work {
+        a {
+            display: none;
         }
     }
 }

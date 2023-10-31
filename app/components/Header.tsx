@@ -1,9 +1,31 @@
+"use client";
 import "../styles/headerStyle/headerStyles.css";
+import { useState } from "react";
+import { HamburgerMenu } from "./HamburgerMenu";
 
 export default function Header() {
+  let [Hamburger, setHamburger] = useState(false);
+
+  const openHamburger = () => {
+    setHamburger(!Hamburger);
+    console.log(Hamburger);
+  };
+
+  const menuAnimationClass = Hamburger
+    ? "hamburger-menu slide-right"
+    : "hamburger-menu slide-left";
+
   return (
     <div className="header-bar">
-      <img className="logo" src="/logoCarmineEsposito.png" alt="" />
+      <img
+        onClick={openHamburger}
+        className="logo"
+        src="/logoCarmineEsposito.png"
+        alt=""
+      />
+      <div className={menuAnimationClass}>
+        {Hamburger && <HamburgerMenu hamburger={Hamburger} />}
+      </div>
       <div className="about-work">
         <a href="#">Skills</a>
         <a href="#">Projects</a>

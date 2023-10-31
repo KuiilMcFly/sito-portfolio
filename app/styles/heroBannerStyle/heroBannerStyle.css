@@ -1,17 +1,19 @@
 .hero-banner {
-  background-image: url("/hero.jpg");
+  background-color: rgb(231, 53, 53);
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   height: 80%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
 }
 .hero-banner .hero-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 40%;
+  text-align: center;
+  width: 100%;
 }
 .hero-banner .hero-title h1, .hero-banner .hero-title h2, .hero-banner .hero-title p, .hero-banner .hero-title .discover-button {
   height: -moz-fit-content;
@@ -26,8 +28,8 @@
 }
 .hero-banner .hero-title p {
   font-size: 22px;
-  width: 50%;
   text-align: center;
+  width: 60%;
   color: rgb(227, 227, 227);
   margin-bottom: 30px;
 }
@@ -43,4 +45,27 @@
   box-shadow: 5px 5px 16px rgba(2, 2, 2, 0.797);
   transition: all 0.2s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .hero-banner {
+    padding-top: 50px;
+    flex-direction: column;
+  }
+  .hero-banner .hero-left .hero-title h1 {
+    font-size: 48px;
+  }
+  .hero-banner .hero-left .hero-title h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .hero-banner .hero-left .hero-title p {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(227, 227, 227);
+    margin-bottom: 30px;
+  }
+  .hero-banner .hero-right img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=heroBannerStyle.css.map */
