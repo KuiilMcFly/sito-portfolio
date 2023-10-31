@@ -2,7 +2,7 @@
     background-image: url('/hero.jpg');
     background-size: cover; 
     color: white;
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
  
@@ -14,7 +14,7 @@
         margin-right: 40%;
         
         
-         h1, h2, p, button {
+         h1, h2, p, .discover-button {
             height: fit-content;
          }
 
@@ -31,14 +31,22 @@
             width: 50%;
             text-align: center;
             color: rgb(227, 227, 227);
-            margin-bottom: 15px;
+            margin-bottom: 30px;
         }
 
-        button {
+        .discover-button {
+            border: solid 1px white;
             padding: 15px;
             border-radius: 10px;
             background-color: white;
             color: black;
+        }
+
+        .discover-button:hover {
+            transform: scale(1.2);
+            box-shadow: 5px 5px 16px rgba(2, 2, 2, 0.797);
+            transition: all 0.2s ease;
+            cursor: pointer;
         }
     }
 }

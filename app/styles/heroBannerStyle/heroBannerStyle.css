@@ -2,7 +2,7 @@
   background-image: url("/hero.jpg");
   background-size: cover;
   color: white;
-  height: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -13,7 +13,7 @@
   align-items: center;
   margin-right: 40%;
 }
-.hero-banner .hero-title h1, .hero-banner .hero-title h2, .hero-banner .hero-title p, .hero-banner .hero-title button {
+.hero-banner .hero-title h1, .hero-banner .hero-title h2, .hero-banner .hero-title p, .hero-banner .hero-title .discover-button {
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -29,11 +29,18 @@
   width: 50%;
   text-align: center;
   color: rgb(227, 227, 227);
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
-.hero-banner .hero-title button {
+.hero-banner .hero-title .discover-button {
+  border: solid 1px white;
   padding: 15px;
   border-radius: 10px;
   background-color: white;
   color: black;
+}
+.hero-banner .hero-title .discover-button:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 16px rgba(2, 2, 2, 0.797);
+  transition: all 0.2s ease;
+  cursor: pointer;
 }/*# sourceMappingURL=heroBannerStyle.css.map */

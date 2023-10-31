@@ -3,7 +3,7 @@ import "../styles/headerStyle/headerStyles.css";
 export default function Header() {
   return (
     <div className="header-bar">
-      <p>Logo</p>
+      <img className="logo" src="/logoCarmineEsposito.png" alt="" />
       <div className="about-work">
         <a href="#">Skills</a>
         <a href="#">Projects</a>

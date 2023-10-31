@@ -15,6 +15,12 @@
     height: 6%;
     padding: 0 20px;
 
+    .logo {
+        height: 45px;
+        width: 45px;
+        filter: invert(100%);
+    }
+
     a,p, div {
         height: fit-content;
     }
@@ -26,10 +32,15 @@
 
     .about-work {
         display: flex;
-        gap: 10px;
+        gap: 50px;
         a {
             color: white;
             text-decoration: none;
+            
+        }
+        a:hover {
+            transform: scale(1.5);
+            transition: all 0.1s ease;
         }
     }
 

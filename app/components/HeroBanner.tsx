@@ -11,7 +11,7 @@ export const HeroBanner = () => {
           I'm a Front-End Developer based in Italy, I have 1 year of experience
           and I specialize in creating Web Apps.
         </p>
-        <button>Discover More</button>
+        <div className="discover-button">Discover More</div>
       </div>
     </div>
   );
